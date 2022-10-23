@@ -22,11 +22,53 @@
     </header>
 
     <div class="login">
-
+        <form action=" ### ">
+            <label for="mail">Email :</label>
+            <br>
+            <input type="email" id="mail" name="mail">
+            <br>
+            <label for="pass">Mot de passe</label>
+            <br>
+            <input type="password" id="pass" name="pass">
+            <br>
+            <input type="checkbox" id="memory" name="memory">
+            <label for="memory"> Se souvenir de moi</label>
+            <br>
+            <input type="submit" value="Envoyer">
+        </form>
     </div>
 
     <div class="registration">
-        
+        <form action=" ### ">
+            <label for="firstName">Prénom :</label>
+            <input type="text" id="firstName" name="firstName">
+            <br>
+            <label for="lastname">Nom :</label>
+            <input type="text" id="lastName" name="lastName">
+            <br>
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="mail">
+            <br>
+            <label for="pass">Mot de passe :</label>
+            <input type="password" id="pass" name="pass">
+            <br>
+            <label for="repeatPass">Confirmer le MDP</label>
+            <input type="password" id="repeatPass" name="repeatPass">
+            <br>
+            <label for="userType">Je suis :</label>
+            <input type="radio" id="patient" name="userType"><label for="patient">Patient</label>
+            <input type="radio" id="intervenant" name="userType"><label for="intervenant">Intervenant</label>
+            <br>
+            <label for="job">Profession :</label>
+            <select name="job" id="job">
+                    <option value="option1">Infirmier(e)</option>
+                    <option value="option2">Medecin</option>
+                    <option value="option3">Kiné</option>
+                    <option value="option4">Auxilliaire de vie</option>
+            </select>
+            <br>
+            <input type="submit" value="Envoyer">
+        </form>
     </div>
 
 
