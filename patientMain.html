@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>PatientMain</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html"><img src="img/Occitanaide 2.png" alt="Occitan'aide"></a></h1>
+        <nav>
+            <ul>
+                <li><a href="linktest.html">Mon Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="patientNav">
+            <ul>
+                <li>Documents</li>
+                <li>Constantes</li>
+                <li>Intervenants</li>
+                <li>Planning</li>
+            </ul>
+        </div>
+
+        <div class="patientResume"> 
+            <div class="patientInfo">
+                <img class="profilPic" src="img/profil1.png" alt="">
+                <h3>Nom</h3>
+                <h3>Prénom</h3>
+                <img class="icon" src="img/mail.png" alt="">
+                <img class="icon" src="img/tel.png" alt="">
+            </div>
+            <div class="checkPills">
+                <h3>Prise de medicament</h3> <!-- l'image check change en fonction de l'état  -->
+                <p>Matin</p>
+                <img class="icon" src="img/check.png" alt="">
+                <p>Midi</p>
+                <img class="icon" src="img/nocheck.png" alt="">
+                <p>soir</p>
+                <img class="icon" src="img/nocheck.png" alt="">
+            </div>
+            <div class="constantes">
+                <h3>Dernières constantes : 21/11/22 11:25</h3>  <!-- l'heure change en fonction de la dernière mise à jour -->
+                <p><img class="icon" src="img/bpm.png" alt=""></p>
+                <p>## bpm</p>
+                <p><img class="icon" src="img/tension.png" alt=""></p>
+                <p>##mmHg</p>
+                <p><img class="icon" src="img/oxy.png" alt=""></p>
+                <p>##%</p>
+                <P><img class="icon" src="img/glycemie.png" alt=""></P>
+                <P>## g/l</P>
+            </div>
+        </div>
+
+        <article id="notesContainer">
+            <h3>Notes</h3>
+            <hr>
+            <section>
+                <form action="">
+                    <label for="addNotes">Ajouter une note</label> <!-- La note s'ajoute avec la date du jour et le nom du profil de la personne qui l'écrit -->
+                    <textarea id=addNotes rows="5" cols="33"></textarea>
+                    <input type="submit">
+                </form>
+                <div class="notes"> 
+                    <p>25 /11 / 2022 _<span class="whoWrote">Agnes Thésie</span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam error eos harum molestias dolorem ut excepturi magni facere, soluta neque!</p>
+                    <hr>
+                    <p>25 /11 / 2022 _<span class="whoWrote">Agnes Thésie</span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam error eos harum molestias dolorem ut excepturi magni facere, soluta neque!</p>
+                    <hr>
+                    <p>25 /11 / 2022 _<span class="whoWrote">Agnes Thésie</span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam error eos harum molestias dolorem ut excepturi magni facere, soluta neque!</p>
+                    <hr>
+                    <p>25 /11 / 2022 _<span class="whoWrote">Agnes Thésie</span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam error eos harum molestias dolorem ut excepturi magni facere, soluta neque!</p>
+                    <hr>
+                </div>
+            </section>
+        </article>
+        
+        <article id="pillulier" >
+            <h3>Pillulier</h3>
+            <hr>
+            <section id="pillsBoxes"><!-- La case du jour se met en evidence-->
+                <ul>
+                    <li>Lundi</li>
+                    <li>Mardi</li>
+                    <li>Mercredi</li>
+                    <li>Jeudi</li>
+                    <li>Vendredi</li>
+                    <li>Samedi</li>
+                    <li>Dimanche</li>
+                </ul>
+            </section>
+        </article>
+
+        <article>
+            <h3>Constantes</h3>
+            <hr>
+            <section class="constantes">
+                <h3>Dernières constantes : 21/11/22 11:25</h3>  <!-- l'heure change en fonction de la dernière mise à jour -->
+                <p><img class="icon" src="img/bpm.png" alt=""></p>
+                <p>## bpm</p>
+                <p><img class="icon" src="img/tension.png" alt=""></p>
+                <p>##mmHg</p>
+                <p><img class="icon" src="img/oxy.png" alt=""></p>
+                <p>##%</p>
+                <P><img class="icon" src="img/glycemie.png" alt=""></P>
+                <P>## g/l</P>
+            </section>
+
+        </article>
+
+        <article id="intervenants">
+            <h3>Intervenants</h3>
+            <hr>
+            <section>
+                <ul>
+                    <ul>
+                        <li><h3>Contact principal</h3></li>
+                        <li>Nom Prénom </li> <!-- Lien vers numéro de téléphone -->
+                    </ul>
+                    <hr>
+                    <ul>
+                        <li><h3>Numéro d'urgence</h3></li>
+                        <li>Medecin de garde</li><!-- Lien vers numéro de téléphone -->
+                        <li>hopital</li><!-- Lien vers numéro de téléphone -->
+                    </ul>
+                </ul>
+                <div class="listIntervenants">
+                    <p>Auxilliaire de vie_<span class="whoWrote">Agnes Thésie</span></p>
+                    <p># 06 06 06 06 06</p>
+                    <hr>
+                    <p>Auxilliaire de vie_<span class="whoWrote">Agnes Thésie</span></p>
+                    <p># 06 06 06 06 06</p>
+                    <hr>
+                    <p>Auxilliaire de vie_<span class="whoWrote">Agnes Thésie</span></p>
+                    <p># 06 06 06 06 06</p>
+                    <hr>
+                    <p>Auxilliaire de vie_<span class="whoWrote">Agnes Thésie</span></p>
+                    <p># 06 06 06 06 06</p>
+                    <hr>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>© 2022 BY SHIBAIKO. CREATED BY MYSELF FOR MY IT SCHOOL PROJECT</p>
+    </footer>
+</body>
+
+</html>

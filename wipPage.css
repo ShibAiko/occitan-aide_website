@@ -1,0 +1,33 @@
+
+body {
+    width: auto;
+    margin:  auto;
+    background-color: #d9d9d9;
+    display: flex;
+}
+
+#wipPage{
+    padding-top: 5em;
+    width: auto;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #wipPage{
+        width: 100%;
+    }
+    #wipPage img{
+        width: 100%;
+    }
+}

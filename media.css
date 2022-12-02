@@ -1,0 +1,202 @@
+@media screen and (max-width: 1024px) {
+
+    body{
+        grid-template-rows: 100px auto 5em ;
+    }
+
+/*----------------------------------------------------------------------*/
+/*-------------------------------- Header ------------------------------*/
+/*----------------------------------------------------------------------*/
+
+/*----------------------- Nav --------------------*/
+    nav {
+        position: unset;
+        align-self:flex-end;
+        height: 100%;
+    }
+
+        nav ul {
+            display: flex;
+            flex-direction: reverse-column;
+        }
+
+                nav ul li a {
+                    border: solid 0px ;
+                }
+
+/*----------------------------------------------------------------------*/
+/*-------------------------- Nav Bar Page Patient ----------------------*/
+/*----------------------------------------------------------------------*/
+
+    .patientNav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .patientNav ul li {
+    width: auto;
+    }
+
+/*----------------------------------------------------------------------*/
+/*----------------------------- Page d'accueil -------------------------*/
+/*----------------------------------------------------------------------*/
+
+    .mainLink{
+        padding: 1em;
+    }
+    
+    .mainSection{
+        position:relative;
+        width: auto;
+        height: 200px;
+        border :solid  4px #0069A4;
+        border-radius: 10px;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    #aaa{
+        background-image: url(img/background1.png);
+    }
+    
+    #bbb{
+        background-image: url(img/background2.png);
+    }
+    
+    .mainSection:hover{
+        border :solid  4px #843360; 
+    }
+    
+    .mainSection:hover .mainSectionTitre{
+        opacity:1;
+        width: 450px;
+        height: 200px;
+        display: inline-block;
+        background: #843360; 
+        transform: skewX(-10deg);
+    }
+    
+    .mainSectionTitre {
+        opacity:1;
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        transition: 0.5s;
+        width: 100px;
+        height: 200px;
+        display: inline-block;
+        background: #0069A4;  
+        transform: skew(-10deg);
+        margin-right: -20px;
+    }
+    
+    h2{
+        position: absolute;
+        font-size: 2em;
+        z-index: 1;
+        right: 20px;
+        top: 25%;
+        font-family: "moderna";
+        text-align: right;
+        color: #f1bd1a;
+        margin: 40px auto;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-shadow: 2px 7px 5px rgba(0,0,0,0.3);
+    }
+
+/*----------------------------------------------------------------------*/
+/*---------------------------- Patient Header --------------------------*/
+/*----------------------------------------------------------------------*/
+    
+    .patientResume {
+        flex-direction: column;
+    }
+
+    .profilPic {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        margin: auto;
+    }
+
+    .patientInfo {
+        width: 100%;
+    }
+
+    .checkPills{
+        width: 100%;
+    }
+
+    .constantes{
+        width: 100%;
+    }
+
+/*----------------------------------------------------------------------*/
+/*-------------------------------- Articles-----------------------------*/
+/*----------------------------------------------------------------------*/
+
+/*------------------------ Notes ---------------------*/
+
+#notesContainer section{
+    flex-direction:column-reverse ;
+}
+
+.notes{
+    width: auto;
+    margin-bottom: 1em;
+    }
+
+    .notes > *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+/*-------------------- Intervenants ------------------*/
+
+#intervenants section{
+    flex-direction: column;
+}
+
+    .listIntervenants {
+        width: auto;
+    }
+
+/*-------------------- Pillulier -------------------*/
+
+/*-------------------- Constantes ------------------*/
+    
+/*----------------------------------------------------------------------*/
+/*---------------- Formulaire de Connexion / Inscription ---------------*/
+/*----------------------------------------------------------------------*/
+
+.formulaire {
+    display: grid;
+    grid-template-areas: "login";
+}
+
+.login{
+    grid-area: login;
+}
+
+.registration{
+    grid-area: login;
+    display:none;
+}
+
+/*----------------------------------------------------------------------*/
+/*-------------------------------- Footer ------------------------------*/
+/*----------------------------------------------------------------------*/
+
+header{
+grid-row: 1;
+}
+main{
+grid-row: 2;
+}
+footer{
+grid-row: 3;
+}
+
+/*----------------------------------------------------------------------*/
+}
