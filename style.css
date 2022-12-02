@@ -129,14 +129,14 @@ nav {
     position: relative;
     width: auto;
     height: 200px;
-    border: solid 4px #0069A4;
+    border: solid 4px #843360;
     border-radius: 10px;
     background-size: cover;
     overflow: hidden;
 }
 
     .mainSection:hover {
-        border: solid 4px #843360;
+        border: solid 4px #f1bd1a;
     }
 
     .mainSection:hover .mainSectionTitre {
@@ -165,7 +165,7 @@ nav {
     width: 100px;
     height: 200px;
     display: inline-block;
-    background: #0069A4;
+    background: #843360;
     transform: skew(-10deg);
     margin-right: -20px;
 }
